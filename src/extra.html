@@ -25,15 +25,7 @@
         
         <div class="max-w-7xl mx-auto">
             
-            <nav aria-label="breadcrumb" class="mb-8">
-                <ol class="flex items-center text-sm text-secondary">
-                    <li>
-                    <a href="/" class="hover:text-primary transition-colors">Inicio</a>
-                    <span class="mx-2">/</span>
-                    </li>
-                    <li aria-current="page" class="font-semibold text-dark">Repositorio</li>
-                </ol>
-            </nav>
+            <include src="./views/breadcrumbs.html">Ponentes</include>
 
             <section class="mb-20">
                 <div data-aos="fade-up" class="text-center mb-12">
@@ -145,50 +137,14 @@
             </section>
 
             <section class="max-w-4xl mx-auto pb-12">
-                <div data-aos="fade-up" class="text-center mb-8">
-                    <h2 class="text-3xl font-medium mb-2">Preguntas frecuentes</h2>
-                    <p class="text-lg">Resuelve tus dudas sobre el evento</p>
-                </div>
-
-                <div id="accordion-container" class="flex flex-col gap-4">
-                    
-                    <details class="group bg-light rounded-lg shadow-sm overflow-hidden">
-                        <summary class="p-4 cursor-pointer font-bold list-none flex justify-between items-center transition-colors
-                                      group-open:bg-primary group-open:text-white">
-                            ¿Qué son las Jornadas Tradikus?
-                            <span class="transition-transform duration-300 group-open:rotate-180">▼</span>
-                        </summary>
-                        <div class="p-4 text-gray-700 bg-light">
-                            Las Jornadas Tradikus son un encuentro anual dedicado a la difusión y celebración de la cocina tradicional de distintos países. Durante tres días, chefs, investigadores gastronómicos y amantes de la gastronomía se reúnen para compartir recetas, técnicas culinarias, historias y cultura.
-                        </div>
-                    </details>
-
-                    <details class="group bg-light rounded-lg shadow-sm overflow-hidden">
-                        <summary class="p-4 cursor-pointer font-bold list-none flex justify-between items-center transition-colors
-                                      group-open:bg-primary group-open:text-white">
-                            ¿Cómo se seleccionan las recetas del repositorio?
-                            <span class="transition-transform duration-300 group-open:rotate-180">▼</span>
-                        </summary>
-                        <div class="p-4 text-gray-700 bg-light">
-                            Las recetas que aparecen en este repositorio han sido elegidas por los ponentes y colaboradores de las Jornadas Tradikus. Cada plato representa la esencia gastronómica de una región y se selecciona en función de su valor cultural, su historia y su importancia dentro de la cocina tradicional.
-                        </div>
-                    </details>
-
-                    <details class="group bg-light rounded-lg shadow-sm overflow-hidden">
-                        <summary class="p-4 cursor-pointer font-bold list-none flex justify-between items-center transition-colors
-                                      group-open:bg-primary group-open:text-white">
-                            ¿Se preparan estas recetas durante las jornadas?
-                            <span class="transition-transform duration-300 group-open:rotate-180">▼</span>
-                        </summary>
-                        <div class="p-4 text-gray-700 bg-light">
-                            Sí. Todas las recetas que ves aquí forman parte de las demostraciones y talleres que se realizan durante las jornadas. Algunas se cocinan en directo en el escenario principal, mientras que otras se desarrollan en pequeños grupos.
-                        </div>
-                    </details>
-
-                </div>
+                <include src="./views/faq.html"></include>
             </section>
         </div>
     </main>
+
+    <div class="max-w-7xl mx-auto px-4 mb-12">
+        <include src="./views/newsletter.html"></include>
+    </div>
 
     <include src="./views/footer.html"></include>
 
