@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <title>Repositorio - Tradikus</title>
+    <meta name="description" content="Galería de fotos de las ediciones anteriores de Tradikus">
+    <meta name="author" content="Santiago García">
+  </head>
+  
+  <body class="bg-fondo text-dark font-sans antialiased">
+  
+    <include src="./views/header.html"></include>
+
+    <main class="py-20 px-4 bg-[linear-gradient(to_bottom,oklch(98%_0.01_60deg),oklch(96%_0.015_40deg))]">
+        
+        <div class="max-w-7xl mx-auto">
+            
+            <nav aria-label="breadcrumb" class="mb-8">
+                <ol class="flex items-center text-sm text-secondary">
+                    <li>
+                    <a href="/" class="hover:text-primary transition-colors">Inicio</a>
+                    <span class="mx-2">/</span>
+                    </li>
+                    <li aria-current="page" class="font-semibold text-dark">Repositorio</li>
+                </ol>
+            </nav>
+
+            <section class="mb-20">
+                <div data-aos="fade-up" class="text-center mb-12">
+                    <h1 class="text-4xl md:text-5xl font-medium mb-4">Repositorio</h1>
+                    <p class="text-lg text-dark font-light">Descubre las recetas que este año se presentarán en la jornada</p>
+                </div>
+
+                <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 justify-items-center list-none p-0">
+
+                    <li data-aos="fade-up" class="w-full max-w-[400px]">
+                        <figure class="gallery-card h-full justify-between">
+                            <img loading="lazy" class="w-full h-64 object-cover rounded-lg" src="./assets/images/sushi.png" alt="Plato de sushi tradicional japonés">
+                            <figcaption class="text-center mt-4 flex flex-col flex-grow w-full">
+                                <h2 class="gallery-title">Sushi tradicional japonés</h2>
+                                <p class="text-lg font-light mb-4 flex-grow">Degustación de sushi artesanal japonés, elaborado con pescado fresco y precisión milimétrica.</p>
+                                <a href="#" class="gallery-link">Ver la receta ahora</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li data-aos="fade-up" class="w-full max-w-[400px]">
+                        <figure class="gallery-card h-full justify-between">
+                            <img loading="lazy" class="w-full h-64 object-cover rounded-lg" src="./assets/images/paella.png" alt="Una paella valenciana">
+                            <figcaption class="text-center mt-4 flex flex-col flex-grow w-full">
+                                <h2 class="gallery-title">Paella valenciana</h2>
+                                <p class="text-lg font-light mb-4 flex-grow">Paella valenciana a leña, con pollo, conejo y el característico sabor del socarrat: un clásico español.</p>
+                                <a href="#" class="gallery-link">Ver la receta ahora</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li data-aos="fade-up" class="w-full max-w-[400px]">
+                        <figure class="gallery-card h-full justify-between">
+                            <img loading="lazy" class="w-full h-64 object-cover rounded-lg" src="./assets/images/pizza.png" alt="Una pizza napolitana">
+                            <figcaption class="text-center mt-4 flex flex-col flex-grow w-full">
+                                <h2 class="gallery-title">Pizza napolitana</h2>
+                                <p class="text-lg font-light mb-4 flex-grow">Pizza napolitana de masa madre, horneada en un horno de piedra a 450º, con mozzarella de búfala.</p>
+                                <a href="#" class="gallery-link">Ver la receta ahora</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li data-aos="fade-up" class="w-full max-w-[400px]">
+                        <figure class="gallery-card h-full justify-between">
+                            <img loading="lazy" class="w-full h-64 object-cover rounded-lg" src="./assets/images/tacos.png" alt="Plato de Tacos mexicanos">
+                            <figcaption class="text-center mt-4 flex flex-col flex-grow w-full">
+                                <h2 class="gallery-title">Tacos mexicanos</h2>
+                                <p class="text-lg font-light mb-4 flex-grow">Tacos tradicionales al pastor, preparados con piña caramelizada y salsa mexicana casera.</p>
+                                <a href="#" class="gallery-link">Ver la receta ahora</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li data-aos="fade-up" class="w-full max-w-[400px]">
+                        <figure class="gallery-card h-full justify-between">
+                            <img loading="lazy" class="w-full h-64 object-cover rounded-lg" src="./assets/images/pad.png" alt="Plato de Pad Thai">
+                            <figcaption class="text-center mt-4 flex flex-col flex-grow w-full">
+                                <h2 class="gallery-title">Pad Thai tailandés</h2>
+                                <p class="text-lg font-light mb-4 flex-grow">Pad Thai tailandés salteado al wok, con cacahuetes tostados y brotes de soja frescos.</p>
+                                <a href="#" class="gallery-link">Ver la receta ahora</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li data-aos="fade-up" class="w-full max-w-[400px]">
+                        <figure class="gallery-card h-full justify-between">
+                            <img loading="lazy" class="w-full h-64 object-cover rounded-lg" src="./assets/images/ceviche.png" alt="Plato de Ceviche peruano">
+                            <figcaption class="text-center mt-4 flex flex-col flex-grow w-full">
+                                <h2 class="gallery-title">Ceviche peruano</h2>
+                                <p class="text-lg font-light mb-4 flex-grow">Ceviche peruano marinado en lima fresca, acompañado de maíz chulpe y cebolla morada.</p>
+                                <a href="#" class="gallery-link">Ver la receta ahora</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li data-aos="fade-up" class="w-full max-w-[400px]">
+                        <figure class="gallery-card h-full justify-between">
+                            <img loading="lazy" class="w-full h-64 object-cover rounded-lg" src="./assets/images/croasan.png" alt="Plato de Croissant">
+                            <figcaption class="text-center mt-4 flex flex-col flex-grow w-full">
+                                <h2 class="gallery-title">Croissant francés</h2>
+                                <p class="text-lg font-light mb-4 flex-grow">Croissant francés recién horneado, de capas crujientes y mantequilla de primera calidad.</p>
+                                <a href="#" class="gallery-link">Ver la receta ahora</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li data-aos="fade-up" class="w-full max-w-[400px]">
+                        <figure class="gallery-card h-full justify-between">
+                            <img loading="lazy" class="w-full h-64 object-cover rounded-lg" src="./assets/images/falafel.png" alt="Plato de Falafel oriental">
+                            <figcaption class="text-center mt-4 flex flex-col flex-grow w-full">
+                                <h2 class="gallery-title">Falafel del Medio Oriente</h2>
+                                <p class="text-lg font-light mb-4 flex-grow">Falafel tradicional servido con hummus cremoso y verduras encurtidas al estilo libanés.</p>
+                                <a href="#" class="gallery-link">Ver la receta ahora</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li data-aos="fade-up" class="w-full max-w-[400px]">
+                        <figure class="gallery-card h-full justify-between">
+                            <img loading="lazy" class="w-full h-64 object-cover rounded-lg" src="./assets/images/curry.png" alt="Plato de curry indio">
+                            <figcaption class="text-center mt-4 flex flex-col flex-grow w-full">
+                                <h2 class="gallery-title">Curry indio</h2>
+                                <p class="text-lg font-light mb-4 flex-grow">Curry indio especiado, cocinado lentamente con leche de coco y un toque de cilantro fresco.</p>
+                                <a href="#" class="gallery-link">Ver la receta ahora</a>    
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="max-w-4xl mx-auto pb-12">
+                <div data-aos="fade-up" class="text-center mb-8">
+                    <h2 class="text-3xl font-medium mb-2">Preguntas frecuentes</h2>
+                    <p class="text-lg">Resuelve tus dudas sobre el evento</p>
+                </div>
+
+                <div id="accordion-container" class="flex flex-col gap-4">
+                    
+                    <details class="group bg-light rounded-lg shadow-sm overflow-hidden">
+                        <summary class="p-4 cursor-pointer font-bold list-none flex justify-between items-center transition-colors
+                                      group-open:bg-primary group-open:text-white">
+                            ¿Qué son las Jornadas Tradikus?
+                            <span class="transition-transform duration-300 group-open:rotate-180">▼</span>
+                        </summary>
+                        <div class="p-4 text-gray-700 bg-light">
+                            Las Jornadas Tradikus son un encuentro anual dedicado a la difusión y celebración de la cocina tradicional de distintos países. Durante tres días, chefs, investigadores gastronómicos y amantes de la gastronomía se reúnen para compartir recetas, técnicas culinarias, historias y cultura.
+                        </div>
+                    </details>
+
+                    <details class="group bg-light rounded-lg shadow-sm overflow-hidden">
+                        <summary class="p-4 cursor-pointer font-bold list-none flex justify-between items-center transition-colors
+                                      group-open:bg-primary group-open:text-white">
+                            ¿Cómo se seleccionan las recetas del repositorio?
+                            <span class="transition-transform duration-300 group-open:rotate-180">▼</span>
+                        </summary>
+                        <div class="p-4 text-gray-700 bg-light">
+                            Las recetas que aparecen en este repositorio han sido elegidas por los ponentes y colaboradores de las Jornadas Tradikus. Cada plato representa la esencia gastronómica de una región y se selecciona en función de su valor cultural, su historia y su importancia dentro de la cocina tradicional.
+                        </div>
+                    </details>
+
+                    <details class="group bg-light rounded-lg shadow-sm overflow-hidden">
+                        <summary class="p-4 cursor-pointer font-bold list-none flex justify-between items-center transition-colors
+                                      group-open:bg-primary group-open:text-white">
+                            ¿Se preparan estas recetas durante las jornadas?
+                            <span class="transition-transform duration-300 group-open:rotate-180">▼</span>
+                        </summary>
+                        <div class="p-4 text-gray-700 bg-light">
+                            Sí. Todas las recetas que ves aquí forman parte de las demostraciones y talleres que se realizan durante las jornadas. Algunas se cocinan en directo en el escenario principal, mientras que otras se desarrollan en pequeños grupos.
+                        </div>
+                    </details>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <include src="./views/footer.html"></include>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+       AOS.init();
+    </script>
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>
