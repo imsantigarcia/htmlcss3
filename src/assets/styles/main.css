@@ -1,22 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  /* --- COLORES PERSONALIZADOS --- */
-  /* Al usar el prefijo --color-*, Tailwind crea automáticamente clases como bg-primary, text-accent, etc. */
-
-  --color-primary: oklch(65% 0.12 40deg);      /* Tierra cálida */
-  --color-secondary: oklch(82% 0.06 70deg);    /* Madera */
-  --color-accent: oklch(70% 0.10 150deg);      /* Verde */
-  --color-fondo: oklch(46.65% 0.102 55.62deg); /* Marrón de fondo */
+  --color-primary: oklch(65% 0.12 40deg);
+  --color-secondary: oklch(82% 0.06 70deg);
+  --color-accent: oklch(70% 0.10 150deg);
+  --color-fondo: oklch(46.65% 0.102 55.62deg);
   
-  /* Colores complementarios */
-  --color-dark: oklch(40% 0.06 35deg);            /* Cacao */
-  --color-light: oklch(98.182% 0.0151 76.978deg); /* Harina */
-  --color-blanco: oklch(100% 0.0001 271.152deg);  /* Blanco */
-  --color-accent-warm: oklch(78% 0.12 90deg);     /* Cúrcuma */
-  --color-accent-cool: oklch(68% 0.05 210deg);    /* Arcilla */
+  --color-dark: oklch(40% 0.06 35deg);
+  --color-light: oklch(98.182% 0.0151 76.978deg);
+  --color-blanco: oklch(100% 0.0001 271.152deg);
+  --color-accent-warm: oklch(78% 0.12 90deg);
+  --color-accent-cool: oklch(68% 0.05 210deg);
   
-  /* Grises tierra (Añadido prefijo --color- para que funcionen las clases bg-gray-900, etc.) */
   --color-gray-900: oklch(28% 0.01 70deg);
   --color-gray-700: oklch(45% 0.01 70deg);
   --color-gray-500: oklch(60% 0.01 70deg);
@@ -24,8 +19,6 @@
   --color-gray-100: oklch(93% 0.01 70deg);
 }
 
-/* --- COMPONENTES EXTRAÍDOS --- */
-/* Cumple el requisito de extraer clases con @apply */
 @layer components {
   .speaker-card {
     @apply bg-light p-6 rounded-lg shadow-sm text-center transition duration-300 
@@ -38,32 +31,17 @@
   .speaker-img {
     @apply w-full max-w-[330px] h-auto rounded-lg object-cover mx-auto;
   }
-}
 
-/* ... código anterior ... */
-
-@layer components {
-  
-  /* --- CLASES DE SPEAKERS (YA LAS TENÍAS) --- */
-  .speaker-card { /* ... */ }
-  .speaker-name { /* ... */ }
-  .speaker-img  { /* ... */ }
-
-  /* --- NUEVAS CLASES PARA REPOSITORIO --- */
-  
-  /* 1. Tarjeta de la galería */
   .gallery-card {
     @apply bg-light p-4 rounded-lg shadow-sm transition duration-300 flex flex-col items-center
            hover:-translate-y-1 hover:shadow-lg hover:shadow-black/15;
   }
 
-  /* 2. Botón de "Ver receta" */
   .gallery-link {
     @apply block w-full text-center bg-fondo text-white py-2 rounded-lg mt-4 no-underline 
            hover:opacity-90 transition-opacity;
   }
 
-  /* 3. Título de la tarjeta */
   .gallery-title {
     @apply text-xl font-normal text-primary mt-2 mb-1;
   }
