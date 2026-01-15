@@ -1,32 +1,32 @@
-<!--Header-->
-<header class="header">
-    <div class="wrapper">
-        <nav class="header__nav">
-            <!--Logo-->
-            <a href="/src/index.html" class="header__logo">
-                <p class="header__text">Tradikus</p>
+<header class="w-full bg-light shadow-md">
+    <div class="container mx-auto px-4">
+        <nav class="flex items-center justify-between py-4">
+            
+            <a href="/src/index.html" class="flex items-center no-underline">
+                <p class="text-2xl font-bold text-primary">Tradikus</p>
             </a>
 
-            <!-- Botón Hamburguesa -->
-            <button class="header__burger" aria-label="Abrir menú">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="block md:hidden text-primary focus:outline-none p-2" aria-label="Abrir menú">
+                <div class="w-6 h-0.5 bg-current mb-1"></div>
+                <div class="w-6 h-0.5 bg-current mb-1"></div>
+                <div class="w-6 h-0.5 bg-current"></div>
             </button>
 
-            <!--Menú-->
-            <ul class="header__nav-list header__nav-list--mobile">
+            <ul class="hidden md:flex gap-8 items-center list-none m-0 p-0">
 
-                <!--Extra-->
-                <li class="header__nav-item">
-                    <a href="/src/extra.html" class="header__nav-link">Repositorio</a>
+                <li>
+                    <a href="/src/extra.html" class="text-dark font-medium hover:text-primary transition-colors duration-300 no-underline">
+                        Repositorio
+                    </a>
                 </li>
 
-                <!--Ponentes-->
-                <li class="header__nav-item">
-                    <a href="/src/ponentes.html" class="header__nav-link">Ponentes</a>
+                <li>
+                    <a href="/src/ponentes.html" class="text-dark font-medium hover:text-primary transition-colors duration-300 no-underline">
+                        Ponentes
+                    </a>
                 </li>
             </ul>
+
         </nav>
     </div>
 </header>
